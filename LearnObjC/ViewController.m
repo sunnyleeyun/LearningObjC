@@ -16,7 +16,14 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+ 
+  NSString * word1 = @"Hello";
+  NSString * const word2 = @"Goodbye";
+  
+  word1 = @"Hey";
+  
+  int three = 3;
+  int const two = 2;
 }
 
 
