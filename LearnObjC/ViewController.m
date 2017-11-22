@@ -16,14 +16,21 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
- 
-  NSString * word1 = @"Hello";
+ // Variable and Constant
+  NSString *word1 = @"Hello";
   NSString * const word2 = @"Goodbye";
   
   word1 = @"Hey";
   
   int three = 3;
   int const two = 2;
+  
+  // String
+  name = @"Sunny";
+  
+  NSString *word = @"Hello";
+  self.label.text = [NSString stringWithFormat:@"%@ %@",word, name];
+  
 }
 
 
