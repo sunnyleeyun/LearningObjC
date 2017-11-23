@@ -31,6 +31,16 @@
   NSString *word = @"Hello";
   self.label.text = [NSString stringWithFormat:@"%@ %@",word, name];
   
+  // int
+  int1 = 10;
+  int2 = 100;
+  
+  int score = int1 + int2;
+  self.intLabel.text = [NSString stringWithFormat:@"%d", score];
+  
+  
+  
+  
 }
 
 

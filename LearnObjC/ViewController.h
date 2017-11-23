@@ -9,10 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
+  // String
   NSString *name;
   
+  // int
+  int int1;
+  int int2;
+ 
 }
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *intLabel;
 
 
 @end
