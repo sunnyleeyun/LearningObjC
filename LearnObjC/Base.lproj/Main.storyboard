@@ -36,12 +36,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g7-jZ-jQN">
+                                <rect key="frame" x="0.0" y="136" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tNc-u7-TU6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-oe-IRL">
+                                <rect key="frame" x="163" y="206" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z85-7f-lY7" secondAttribute="trailing" id="3II-4z-wOb"/>
                             <constraint firstItem="mNr-0M-BXM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3pm-J7-lVW"/>
+                            <constraint firstItem="5g7-jZ-jQN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A71-qA-91h"/>
+                            <constraint firstItem="5g7-jZ-jQN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JLF-MC-JQT"/>
+                            <constraint firstItem="gUn-oe-IRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jcv-o6-Aga"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNr-0M-BXM" secondAttribute="trailing" id="M2O-c7-6jB"/>
+                            <constraint firstItem="gUn-oe-IRL" firstAttribute="top" secondItem="5g7-jZ-jQN" secondAttribute="bottom" constant="20" id="Tad-GA-ZuZ"/>
+                            <constraint firstItem="5g7-jZ-jQN" firstAttribute="top" secondItem="z85-7f-lY7" secondAttribute="bottom" constant="30" id="XYl-kg-9xF"/>
                             <constraint firstItem="mNr-0M-BXM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dvY-uH-CMr"/>
                             <constraint firstItem="z85-7f-lY7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hl9-O4-TKH"/>
                             <constraint firstItem="z85-7f-lY7" firstAttribute="top" secondItem="mNr-0M-BXM" secondAttribute="bottom" id="lT5-rS-oWl"/>
@@ -49,6 +64,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="boolButton" destination="5g7-jZ-jQN" id="EzH-Ne-2Sy"/>
+                        <outlet property="boolSwitch" destination="gUn-oe-IRL" id="Xgr-LM-8xm"/>
                         <outlet property="intLabel" destination="z85-7f-lY7" id="F3c-Fn-pJ6"/>
                         <outlet property="label" destination="mNr-0M-BXM" id="six-xw-Mkz"/>
                     </connections>

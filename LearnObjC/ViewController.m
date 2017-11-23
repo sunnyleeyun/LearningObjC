@@ -39,6 +39,13 @@
   self.intLabel.text = [NSString stringWithFormat:@"%d", score];
   
   
+  // bool
+  bool1 = NO;
+  bool2 = false;
+  self.boolSwitch.on = bool1;
+  self.boolButton.enabled = bool2;
+  
+  
   
   
 }
