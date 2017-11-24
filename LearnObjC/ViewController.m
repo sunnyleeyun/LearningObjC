@@ -34,18 +34,24 @@
   // int
   int1 = 10;
   int2 = 100;
-  
   int score = int1 + int2;
   self.intLabel.text = [NSString stringWithFormat:@"%d", score];
-  
   
   // bool
   bool1 = NO;
   bool2 = false;
   self.boolSwitch.on = bool1;
   self.boolButton.enabled = bool2;
-  
-  
+
+  // arrays
+  NSArray *array = @[@"Apple", @"Banana", @"Orange"];
+  self.arrayLabel.text = array[0];
+  NSMutableArray *array2 = [[NSMutableArray alloc] initWithObjects:@"Apple", @"Banana", @"Orange", nil];
+  [array2 addObject:@"Melon"];
+  [array2 insertObject:@"Strawberry" atIndex:3];
+  [array2 removeObjectAtIndex:3];
+  self.arrayLabel2.text = array2[3];
+  self.arrayLabel2.text = [NSString stringWithFormat:@"%lu", array2.count];
   
   
 }

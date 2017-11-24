@@ -27,5 +27,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *boolButton;
 @property (weak, nonatomic) IBOutlet UISwitch *boolSwitch;
 
+@property (weak, nonatomic) IBOutlet UILabel *arrayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *arrayLabel2;
+
+
 @end
 
