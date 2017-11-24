@@ -53,6 +53,11 @@
   self.arrayLabel2.text = array2[3];
   self.arrayLabel2.text = [NSString stringWithFormat:@"%lu", array2.count];
   
+  // double (previously skipped? XDD
+  double1 = 100.343;
+  double2 = 213.324;
+  double Dscore = double1 + double2;
+  self.doubleLabel.text = [NSString stringWithFormat:@"%.3f", Dscore];
   
 }
 

@@ -19,6 +19,10 @@
   // Bool
   BOOL bool1;
   BOOL bool2;
+  
+  // double
+  double double1;
+  double double2;
  
 }
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -30,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *arrayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *arrayLabel2;
 
+@property (weak, nonatomic) IBOutlet UILabel *doubleLabel;
 
 @end
 
