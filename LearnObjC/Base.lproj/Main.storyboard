@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,6 +64,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gk7-iz-gKo">
+                                <rect key="frame" x="20" y="454" width="335" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASQ-yC-VT7">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ja9-TT-C26">
+                                        <rect key="frame" x="67" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsc-Ha-RUq">
+                                        <rect key="frame" x="134" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6q-S6-937">
+                                        <rect key="frame" x="201" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMa-oJ-ebz">
+                                        <rect key="frame" x="268" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ja9-TT-C26" firstAttribute="width" secondItem="ASQ-yC-VT7" secondAttribute="width" id="48b-E9-DsE"/>
+                                    <constraint firstItem="V6q-S6-937" firstAttribute="width" secondItem="ASQ-yC-VT7" secondAttribute="width" id="Upv-lx-XNR"/>
+                                    <constraint firstItem="BMa-oJ-ebz" firstAttribute="width" secondItem="ASQ-yC-VT7" secondAttribute="width" id="ZYp-0C-VtK"/>
+                                    <constraint firstItem="dsc-Ha-RUq" firstAttribute="width" secondItem="ASQ-yC-VT7" secondAttribute="width" id="jsJ-QF-a62"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -76,10 +117,12 @@
                             <constraint firstItem="cBe-TE-jzb" firstAttribute="top" secondItem="gUn-oe-IRL" secondAttribute="bottom" constant="30" id="HKW-sw-EaE"/>
                             <constraint firstItem="kt4-I0-d7w" firstAttribute="top" secondItem="Tcp-mQ-MqX" secondAttribute="bottom" constant="46" id="Lrr-jh-3io"/>
                             <constraint firstItem="gUn-oe-IRL" firstAttribute="centerX" secondItem="5g7-jZ-jQN" secondAttribute="centerX" id="MWZ-LX-PwP"/>
+                            <constraint firstItem="Gk7-iz-gKo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Oi0-7V-I6R"/>
                             <constraint firstItem="5g7-jZ-jQN" firstAttribute="top" secondItem="z85-7f-lY7" secondAttribute="bottom" constant="30" id="Q7K-Ib-vwL"/>
                             <constraint firstItem="z85-7f-lY7" firstAttribute="top" secondItem="mNr-0M-BXM" secondAttribute="bottom" id="T3Y-2j-U6x"/>
                             <constraint firstItem="5g7-jZ-jQN" firstAttribute="leading" secondItem="cBe-TE-jzb" secondAttribute="leading" id="TAi-tC-FBc"/>
                             <constraint firstItem="gUn-oe-IRL" firstAttribute="top" secondItem="5g7-jZ-jQN" secondAttribute="bottom" id="TbL-Ix-k40"/>
+                            <constraint firstItem="Gk7-iz-gKo" firstAttribute="top" secondItem="kt4-I0-d7w" secondAttribute="bottom" constant="30" id="Wll-p7-7uj"/>
                             <constraint firstItem="mNr-0M-BXM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Xgp-NP-5Lg"/>
                             <constraint firstItem="cBe-TE-jzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aop-am-Qws"/>
                             <constraint firstItem="Tcp-mQ-MqX" firstAttribute="top" secondItem="gUn-oe-IRL" secondAttribute="bottom" constant="55" id="hyj-Y0-6vj"/>
@@ -88,6 +131,7 @@
                             <constraint firstItem="gUn-oe-IRL" firstAttribute="centerX" secondItem="mNr-0M-BXM" secondAttribute="centerX" id="vxi-dT-3hc"/>
                             <constraint firstItem="gUn-oe-IRL" firstAttribute="centerX" secondItem="kt4-I0-d7w" secondAttribute="centerX" id="wkW-7I-uOZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cBe-TE-jzb" secondAttribute="trailing" id="yfm-Hj-vzv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gk7-iz-gKo" secondAttribute="trailing" constant="20" id="zTU-VG-QXz"/>
                             <constraint firstItem="Tcp-mQ-MqX" firstAttribute="leading" secondItem="kt4-I0-d7w" secondAttribute="leading" id="zkV-7i-YN7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -100,6 +144,11 @@
                         <outlet property="doubleLabel" destination="kt4-I0-d7w" id="3Wx-sx-qeC"/>
                         <outlet property="intLabel" destination="z85-7f-lY7" id="F3c-Fn-pJ6"/>
                         <outlet property="label" destination="mNr-0M-BXM" id="six-xw-Mkz"/>
+                        <outlet property="label1" destination="ASQ-yC-VT7" id="4Q1-zh-bpL"/>
+                        <outlet property="label2" destination="Ja9-TT-C26" id="bPV-Ik-COP"/>
+                        <outlet property="label3" destination="dsc-Ha-RUq" id="o29-3X-Jqu"/>
+                        <outlet property="label4" destination="V6q-S6-937" id="WCd-1m-3rL"/>
+                        <outlet property="label5" destination="BMa-oJ-ebz" id="NjP-SN-1UX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

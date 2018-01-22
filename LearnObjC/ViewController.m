@@ -59,6 +59,51 @@
   double Dscore = double1 + double2;
   self.doubleLabel.text = [NSString stringWithFormat:@"%.3f", Dscore];
   
+  // if
+  BOOL state = false;
+  if (state == true){
+    self.label1.text = @"Allow Access";
+  } else {
+    self.label1.text = @"Deny Access";
+  }
+  
+  // else if
+  NSString *name = @"Dave";
+  if ([name isEqualToString:@"Dave"]){
+    self.label2.text = @"Nice Name";
+  } else if ([name isEqualToString:@"Steve"]){
+    self.label2.text = @"Nice Name";
+  } else {
+    self.label2.text = @"Terrible Name";
+  }
+  
+  // > < if statement
+  int number = 1000;
+  if (number > 500){
+    self.label3.text = @"Unlock Level 2";
+  } else {
+    self.label3.text = @"Retry";
+  }
+  
+  // or
+  NSString *colour = @"Green";
+  if ([colour isEqualToString:@"Green"] || [colour isEqualToString:@"Blue"]){
+    self.label4.text = @"Nice Colour";
+  }
+  
+  // &
+  NSString *username = @"RedKitty123";
+  NSString *password = @"Apple123";
+  
+  if ([username isEqualToString:@"RedKitty123"] && [password isEqualToString:@"Apple123"]){
+    self.label4.text = @"Grant Access";
+  } else if ([username isEqualToString:@"RedKitty123"]){
+    self.label4.text = @"Password incorrect";
+  } else if ([username isEqualToString:@"RedKitty123"]){
+    self.label4.text = @"Username incorrect";
+  } else {
+    self.label4.text = @"Both incorrect";
+  }
 }
 
 
