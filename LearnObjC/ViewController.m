@@ -104,6 +104,15 @@
   } else {
     self.label4.text = @"Both incorrect";
   }
+  
+  // loops
+  int loopNumber = 10;
+  for (loopNumber = 10; loopNumber > 0; loopNumber -= 1) {
+    NSLog(@"%i", loopNumber);
+  }
+
+
+
 }
 
 
